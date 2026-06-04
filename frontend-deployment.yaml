@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: frontend
+  name: frontend
+  namespace: bootcampt
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: frontend
+
+  template:
+    metadata:
+      labels:
+        app: frontend
+
+    spec:
+      containers:
+      - name: devopsbootcamp
+        image: obianuju127/devopsbootcamp:frontend-test-v1
+
+        env:
+        - name: HOSTNAME
+          value: "0.0.0.0"
+
+        - name: NEXT_PUBLIC_API_URL
+          value: "http://api.obianuju-tech.online"
+
+        resources: {}

@@ -1,0 +1,7 @@
+secret.yaml
+*.sql
+*.save
+get-docker.sh
+get_helm.sh
+sh
+'--overrides*'

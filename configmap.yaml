@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-cm
+  namespace: bootcampt
+
+data:
+  PORT: "3001"
+
+  CORS_ORIGINS: "http://obianuju-tech.online,http://localhost:3000,http://127.0.0.1:3000"
+
+  DATABASE_PORT: "5432"
+
+  NEXTAUTH_URL: "http://obianuju-tech.online"
+
+  NEXTAUTH_SECRET: "otzqbcflNWNxY84UKN0J7ALwkX6ccckaRbz60fOZF0g="
+
+  CLOUDINARY_CLOUD_NAME: "dato0tx57"
+
+  CLOUDINARY_API_KEY: "617619881796353"
+
+  CLOUDINARY_API_SECRET: "fLdchby9x03ngDCqrBFTsFqAlOQ"
