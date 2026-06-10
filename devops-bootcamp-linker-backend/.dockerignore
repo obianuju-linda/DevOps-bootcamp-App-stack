@@ -43,3 +43,11 @@ __tests__
 # Misc
 *.md
 *.tsbuildinfo
+
+node_modules
+.git
+Dockerfile
+README.md
+*.log
+.env
+dist
