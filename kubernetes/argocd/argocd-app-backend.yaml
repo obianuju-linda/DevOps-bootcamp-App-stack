@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/obianuju-linda/DevOps-bootcamp-App-stack.git
     targetRevision: HEAD
-    path: backend
+    path: kubernetes/backend
   destination:
     server: https://kubernetes.default.svc
     namespace: bootcampt
