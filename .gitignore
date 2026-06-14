@@ -5,3 +5,5 @@ get-docker.sh
 get_helm.sh
 sh
 '--overrides*'
+.env
+*.env
