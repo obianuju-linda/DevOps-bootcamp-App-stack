@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backend-ingress
+  namespace: bootcampt
+  annotations:
+    cert-manager.io/cluster-issuer: bootcampt-issuer
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - api.obianuju-tech.online
+    secretName: backend-tls
+  rules:
+  - host: api.obianuju-tech.online
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: backend
+            port:
+              number: 3001

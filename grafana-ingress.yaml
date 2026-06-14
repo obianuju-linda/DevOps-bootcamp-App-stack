@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: grafana-ingress
+  namespace: observability
+  annotations:
+    cert-manager.io/cluster-issuer: bootcampt-issuer
+spec:
+  ingressClassName: nginx
+
+  tls:
+  - hosts:
+    - grafana.obianuju-tech.online
+    secretName: grafana-tls
+
+  rules:
+  - host: grafana.obianuju-tech.online
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kube-prom-stack-grafana
+            port:
+              number: 80
