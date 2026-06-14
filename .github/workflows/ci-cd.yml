@@ -25,8 +25,8 @@ jobs:
         with:
           scan-type: fs
           scan-ref: ./devops-bootcamp-linker-frontend
-          severity: CRITICAL,HIGH
-          exit-code: 0
+          severity: CRITICAL
+          exit-code: 1
           format: table
 
       - name: Scan backend source
@@ -34,8 +34,8 @@ jobs:
         with:
           scan-type: fs
           scan-ref: ./devops-bootcamp-linker-backend
-          severity: CRITICAL,HIGH
-          exit-code: 0
+          severity: CRITICAL
+          exit-code: 1
           format: table
 
   # ─────────────────────────────────────────
@@ -67,7 +67,7 @@ jobs:
         with:
           image-ref: ${{ env.IMAGE_NAME }}:frontend-test-v${{ github.run_number }}
           severity: CRITICAL
-          exit-code: 0
+          exit-code: 1
           format: table
 
       - name: Push frontend image
@@ -104,7 +104,7 @@ jobs:
         with:
           image-ref: ${{ env.IMAGE_NAME }}:backend-test-v${{ github.run_number }}
           severity: CRITICAL
-          exit-code: 0
+          exit-code: 1
           format: table
 
       - name: Push backend image
