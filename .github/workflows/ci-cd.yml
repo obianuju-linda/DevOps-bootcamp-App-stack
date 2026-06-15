@@ -123,7 +123,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4.2.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
           ref: main
 
       - name: Update frontend image tag in manifest
@@ -140,6 +140,7 @@ jobs:
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
+          git remote set-url origin https://obianuju-linda:${{ secrets.GH_PAT }}@github.com/obianuju-linda/DevOps-bootcamp-App-stack.git
           git add kubernetes/frontend/frontend-deployment.yaml kubernetes/backend/backend.yaml
           git commit -m "CI: update image tags to test-v${{ github.run_number }}" || echo "No changes to commit"
           git push origin main
