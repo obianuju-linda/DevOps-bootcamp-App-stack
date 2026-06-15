@@ -17,7 +17,7 @@ spec:
         kubernetes.io/hostname: vmi3169176
       containers:
         - name: devopsbootcamp
-          image: obianuju127/devopsbootcamp:backend-test-v96
+          image: obianuju127/devopsbootcamp:backend-test-v97
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3001
