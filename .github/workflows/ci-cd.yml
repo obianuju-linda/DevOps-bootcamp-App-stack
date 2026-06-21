@@ -58,6 +58,7 @@ jobs:
       - name: Build frontend image
         run: |
           docker build \
+            --build-arg NEXT_PUBLIC_API_URL=https://api.obianuju-tech.online/api \
             -t $IMAGE_NAME:frontend-test-v${{ github.run_number }} \
             -t $IMAGE_NAME:frontend-latest \
             ./devops-bootcamp-linker-frontend
