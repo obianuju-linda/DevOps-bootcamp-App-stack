@@ -5,6 +5,10 @@
 **Author:** Obianuju Linda Owoh  
 **Role:** DevOps Engineer  
 **Duration:** 3 months  
+📚 **Complete documentation (with architecture diagrams, deployment steps, screenshots, troubleshooting, and proof of concept):**
+
+🔗 https://melodious-rake-cb4.notion.site/DEVOPS-BOOTCAMP-PROJECT-DOCUMENTATION-DevSecOps-GitOps-Kubernetes-Platform-3869e3fe1ca880a58110d35fbbc688d5?pvs=141
+
 **Live App:** [obianuju-tech.online](https://obianuju-tech.online) | **API:** [api.obianuju-tech.online](https://api.obianuju-tech.online)  
 **ArgoCD:** [argocd.obianuju-tech.online](https://argocd.obianuju-tech.online) | **Grafana:** [grafana.obianuju-tech.online](https://grafana.obianuju-tech.online)
 
