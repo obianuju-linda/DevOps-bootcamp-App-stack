@@ -598,6 +598,6 @@ DevOps-bootcamp-App-stack/
 ## Author
 
 **Obianuju Linda Owoh** — DevOps Engineer  
-[GitHub](https://github.com/obianuju-linda) · [LinkedIn](https://linkedin.com/in/obianuju-linda-owoh)
+[GitHub](https://github.com/obianuju-linda) · [LinkedIn](www.linkedin.com/in/obianuju-owoh)
 
 > Built as part of a structured 3-month DevOps bootcamp to demonstrate production-grade Kubernetes deployment, GitOps workflows, CI/CD automation, container security, and full-stack observability.
