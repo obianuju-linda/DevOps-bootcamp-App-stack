@@ -7,3 +7,7 @@ sh
 '--overrides*'
 .env
 *.env
+# Cloudflare secrets
+cloudflare.yaml
+kubernetes/ingress/cloudflare.yaml
+infrastructure/cloudflare.yaml
