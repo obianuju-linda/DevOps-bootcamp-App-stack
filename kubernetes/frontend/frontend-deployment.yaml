@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: devopsbootcamp
-        image: obianuju127/devopsbootcamp:frontend-test-v422
+        image: obianuju127/devopsbootcamp:frontend-test-v423
 
         env:
         - name: HOSTNAME
