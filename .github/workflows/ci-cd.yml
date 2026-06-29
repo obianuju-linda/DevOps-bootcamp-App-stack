@@ -2,9 +2,11 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+    paths-ignore:
+      - '**/deployment.yaml'   # ignore manifest-only commits
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 env:
   IMAGE_NAME: obianuju127/devopsbootcamp
